@@ -33,22 +33,44 @@ class Computer
 
         void print() const
         {
-             cout << "(" << this->_ix
-            << "," << this->_iy
+             cout << "(" << this->_price
+            << "," << this->_brand
             << ")" << endl;
         }
 
     private:
+        Computer(const Computer & rhs)=delete;
+        Computer & operator=(const Computer & rhs)=delete;
 
-        Computer()
+        Computer()=default;
+        Computer(int price,const char*brand)
+            :_price(price)
+             ,_brand(new char[strlen(brand)+1]())
+        {
+            strcpy(_brand,brand);
+            cout<<"Computer(int,int)"<<endl;
+        }
+
+        ~Computer()
+        {
+            cout<<"~Computer()"<<endl;
+        }
         int _price;
         char *_brand;
         static Computer * _pInstance;
 };
 
+Computer *Computer::_pInstance=nullptr;
+
 int main()
 {
-    std::cout << "Hello world" << std::endl;
+    Computer::getInstance()->print();
+    Computer::getInstance()->init(10000,"huawei");
+    Computer::getInstance()->print();
+    Computer::destroy();
+    Computer::getInstance()->print();
+    Computer::destroy();
+    Computer::destroy();
     return 0;
 }
 
