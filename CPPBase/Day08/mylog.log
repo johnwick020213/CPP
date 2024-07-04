@@ -1,0 +1,4 @@
+2024-07-03 21:29:26,247 [140559830792000] INFO  MyCategory - [mylog.cc:72-main] The log is info message
+2024-07-03 21:29:26,248 [140559830792000] ERROR MyCategory - [mylog.cc:73-main] The log is error message
+2024-07-03 21:29:26,249 [140559830792000] WARN  MyCategory - [mylog.cc:74-main] The log is warn message
+2024-07-03 21:29:26,250 [140559830792000] DEBUG MyCategory - [mylog.cc:75-main] The log is debug message
