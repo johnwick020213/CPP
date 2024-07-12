@@ -50,7 +50,6 @@ String::String(const char *ptr)
 {
     strcpy(_pstr,ptr);
     cout<<"String(const char *ptr)"<<endl;
-    cout<<_pstr<<endl;
 }
 
 String::String(const String &rhs)
