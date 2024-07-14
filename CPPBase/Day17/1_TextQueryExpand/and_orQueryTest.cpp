@@ -52,8 +52,7 @@ int main(int argc, char **argv)
         cout << "\nenter third word: " ;
         cin  >> sought3;
         // find all the occurrences of the requested string
-        Query q = Query(sought1) & Query(sought2) 
-                             | Query(sought3);
+        Query q =( Query(sought1) & Query(sought2))| Query(sought3);
         cout << "\nExecuting Query for: " << q << endl;
         const QueryResult results = q.eval(file);
         // report matches
