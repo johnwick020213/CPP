@@ -3,6 +3,7 @@
 
 using namespace::std;
 
+//构建双向链表
 struct Node
 {
     int key,val;
@@ -14,6 +15,7 @@ struct Node
 class LRUCache
 {
 public:
+    //构造函数，初始化双向链表
     LRUCache(int _capacity):capacity(_capacity),size(0)
     {
           head=new Node();
@@ -26,13 +28,14 @@ public:
     {
         if(!h.count(key))return -1;
         Node*node=h[key];
-        removeNode(node);
-        addNodeToHead(node);
+        removeNode(node);//删除节点
+        addNodeToHead(node);//头部添加
         return node->val;
     }
 
     void put(int key,int value)
     {
+        //哈希表中存在
         if(h.count(key))
         {
             Node*node=h[key];
@@ -40,8 +43,10 @@ public:
             removeNode(node);
             addNodeToHead(node);
         }
+        //哈希表中不存在
         else
         {
+            //容量已满，尾部删除
             if(size==capacity)
             {
                 Node *rm=tail->prev;
@@ -52,6 +57,7 @@ public:
             Node*node=new Node(key,value);
             addNodeToHead(node);
             h[key]=node;
+            size++;
         }
     }
 
