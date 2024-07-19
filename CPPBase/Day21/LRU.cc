@@ -7,9 +7,10 @@ using namespace::std;
 struct Node
 {
     int key,val;
-    shared_ptr<Node> prev,next;
-    Node():key(0),val(0),prev(nullptr),next(nullptr){}
-    Node(int _key,int _val):key(_key),val(_val),prev(nullptr),next(nullptr){}
+    weak_ptr<Node>prev;
+    shared_ptr<Node>next;
+    Node():key(0),val(0),prev(),next(nullptr){}
+    Node(int _key,int _val):key(_key),val(_val),prev(),next(nullptr){}
 };
 
 class LRUCache
@@ -49,7 +50,7 @@ public:
             //容量已满，尾部删除
             if(size==capacity)
             {
-                auto rm=tail->prev;
+                auto rm=tail->prev.lock();
                 h.erase(rm->key);
                 removeNode(rm);
                 size--;
@@ -63,14 +64,16 @@ public:
 
     void removeNode(shared_ptr<Node>node)
     {
-        node->prev->next=node->next;
-        node->next->prev=node->prev;
+        auto prevNode=node->prev.lock();
+        prevNode->next=node->next;
+        node->next->prev=prevNode;
     }
 
     void addNodeToHead(shared_ptr<Node>node)
     {
         node->prev=head;
         node->next=head->next;
+        head->next->prev=node;
         head->next=node;
     }
 private:
