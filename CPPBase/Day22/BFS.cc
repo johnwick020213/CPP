@@ -6,6 +6,7 @@
 #include <set>
 #include <algorithm>
 
+
 using namespace std;
 
 class Wordmap;
