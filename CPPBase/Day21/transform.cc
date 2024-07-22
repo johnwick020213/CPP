@@ -32,7 +32,8 @@ void TF_word::read_order(const string &filename)
     {
         istringstream iss(line);
         string key,value;
-        iss>>key>>value;
+        iss>>key;
+        getline(iss,value);
         _order.insert(make_pair(key,value));
     }
 
