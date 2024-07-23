@@ -1,7 +1,0 @@
-<map id="Query_base" name="Query_base">
-<area shape="rect" id="node2" href="$classBinaryQuery.html" title="{BinaryQuery\n|# lhs\l# rhs\l# opSym\l|# BinaryQuery()\l# rep()\l}" alt="" coords="38,131,151,252"/>
-<area shape="rect" id="node5" href="$classNotQuery.html" title="{NotQuery\n||}" alt="" coords="175,153,254,230"/>
-<area shape="rect" id="node6" href="$classWordQuery.html" title="{WordQuery\n||}" alt="" coords="279,153,367,230"/>
-<area shape="rect" id="node3" href="$classAndQuery.html" title="{AndQuery\n||}" alt="" coords="5,300,85,377"/>
-<area shape="rect" id="node4" href="$classOrQuery.html" title="{OrQuery\n||}" alt="" coords="110,300,181,377"/>
-</map>
