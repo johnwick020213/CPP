@@ -1,0 +1,8 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" href="$classQuery__base.html" title="Query_base" alt="" coords="5,81,97,108"/>
+<area shape="rect" id="node2" href="$classBinaryQuery.html" title="BinaryQuery" alt="" coords="145,31,240,57"/>
+<area shape="rect" id="node5" href="$classNotQuery.html" title="NotQuery" alt="" coords="153,81,232,108"/>
+<area shape="rect" id="node6" href="$classWordQuery.html" title="WordQuery" alt="" coords="149,132,237,159"/>
+<area shape="rect" id="node3" href="$classAndQuery.html" title="AndQuery" alt="" coords="288,5,368,32"/>
+<area shape="rect" id="node4" href="$classOrQuery.html" title="OrQuery" alt="" coords="293,56,363,83"/>
+</map>
