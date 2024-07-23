@@ -1,0 +1,5 @@
+<map id="BinaryQuery" name="BinaryQuery">
+<area shape="rect" id="node3" href="$classAndQuery.html" title="{AndQuery\n||}" alt="" coords="5,300,85,377"/>
+<area shape="rect" id="node4" href="$classOrQuery.html" title="{OrQuery\n||}" alt="" coords="110,300,181,377"/>
+<area shape="rect" id="node2" href="$classQuery__base.html" title="{Query_base\n||# ~Query_base()\l}" alt="" coords="35,5,154,83"/>
+</map>

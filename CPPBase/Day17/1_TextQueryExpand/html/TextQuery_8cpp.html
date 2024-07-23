@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: TextQuery.cpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#typedef-members">类型定义</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">TextQuery.cpp 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="TextQuery_8h_source.html">TextQuery.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="make__plural_8h_source.html">make_plural.h</a>&quot;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;cctype&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+TextQuery.cpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="TextQuery_8cpp__incl.png" border="0" usemap="#TextQuery_8cpp" alt=""/></div>
+<map name="TextQuery_8cpp" id="TextQuery_8cpp">
+<area shape="rect" id="node2" href="TextQuery_8h.html" title="TextQuery.h" alt="" coords="538,80,633,107"/>
+<area shape="rect" id="node11" href="make__plural_8h.html" title="make_plural.h" alt="" coords="42,80,145,107"/>
+<area shape="rect" id="node9" href="QueryResult_8h.html" title="QueryResult.h" alt="" coords="372,155,479,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+类型定义</h2></td></tr>
+<tr class="memitem:acebdc99ff3dd51e1da2b373e7381e8b3"><td class="memItemLeft" align="right" valign="top">typedef map&lt; string, shared_ptr&lt; set&lt; <a class="el" href="classTextQuery.html#a504c1be8d67d4fcf4c205999e2377262">TextQuery::line_no</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TextQuery_8cpp.html#acebdc99ff3dd51e1da2b373e7381e8b3">wmType</a></td></tr>
+<tr class="separator:acebdc99ff3dd51e1da2b373e7381e8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6679374211c0e463443405e911f06ae"><td class="memItemLeft" align="right" valign="top">typedef wmType::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TextQuery_8cpp.html#ac6679374211c0e463443405e911f06ae">wmIter</a></td></tr>
+<tr class="separator:ac6679374211c0e463443405e911f06ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e0a1113e16947c9991f221fd01eb22"><td class="memItemLeft" align="right" valign="top">typedef shared_ptr&lt; set&lt; <a class="el" href="classTextQuery.html#a504c1be8d67d4fcf4c205999e2377262">TextQuery::line_no</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TextQuery_8cpp.html#aa4e0a1113e16947c9991f221fd01eb22">lineType</a></td></tr>
+<tr class="separator:aa4e0a1113e16947c9991f221fd01eb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0013742d5b21e5dceb51abb75b7553"><td class="memItemLeft" align="right" valign="top">typedef set&lt; <a class="el" href="classTextQuery.html#a504c1be8d67d4fcf4c205999e2377262">TextQuery::line_no</a> &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TextQuery_8cpp.html#a7d0013742d5b21e5dceb51abb75b7553">lineIter</a></td></tr>
+<tr class="separator:a7d0013742d5b21e5dceb51abb75b7553"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:aee25760ed696efe10f8643654d9b9016"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="TextQuery_8cpp.html#aee25760ed696efe10f8643654d9b9016">print</a> (ostream &amp;os, const <a class="el" href="classQueryResult.html">QueryResult</a> &amp;qr)</td></tr>
+<tr class="separator:aee25760ed696efe10f8643654d9b9016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">类型定义说明</h2>
+<a id="a7d0013742d5b21e5dceb51abb75b7553"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d0013742d5b21e5dceb51abb75b7553">&#9670;&nbsp;</a></span>lineIter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef set&lt;<a class="el" href="classTextQuery.html#a504c1be8d67d4fcf4c205999e2377262">TextQuery::line_no</a>&gt;::const_iterator <a class="el" href="TextQuery_8cpp.html#a7d0013742d5b21e5dceb51abb75b7553">lineIter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa4e0a1113e16947c9991f221fd01eb22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4e0a1113e16947c9991f221fd01eb22">&#9670;&nbsp;</a></span>lineType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef shared_ptr&lt;set&lt;<a class="el" href="classTextQuery.html#a504c1be8d67d4fcf4c205999e2377262">TextQuery::line_no</a>&gt; &gt; <a class="el" href="TextQuery_8cpp.html#aa4e0a1113e16947c9991f221fd01eb22">lineType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6679374211c0e463443405e911f06ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6679374211c0e463443405e911f06ae">&#9670;&nbsp;</a></span>wmIter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef wmType::const_iterator <a class="el" href="TextQuery_8cpp.html#ac6679374211c0e463443405e911f06ae">wmIter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acebdc99ff3dd51e1da2b373e7381e8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acebdc99ff3dd51e1da2b373e7381e8b3">&#9670;&nbsp;</a></span>wmType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef map&lt;string, shared_ptr&lt;set&lt;<a class="el" href="classTextQuery.html#a504c1be8d67d4fcf4c205999e2377262">TextQuery::line_no</a>&gt; &gt; &gt; <a class="el" href="TextQuery_8cpp.html#acebdc99ff3dd51e1da2b373e7381e8b3">wmType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="aee25760ed696efe10f8643654d9b9016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee25760ed696efe10f8643654d9b9016">&#9670;&nbsp;</a></span>print()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ostream&amp; print </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classQueryResult.html">QueryResult</a> &amp;&#160;</td>
+          <td class="paramname"><em>qr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
