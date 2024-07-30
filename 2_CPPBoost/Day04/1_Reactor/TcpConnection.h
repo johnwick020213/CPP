@@ -1,4 +1,11 @@
-
+/**
+ * @file TcpConnection.h
+ * @author johnwick
+ * @brief TcpConnection类的头文件，用于定义TcpConnection类及其成员函数。
+ * 
+ * 这个文件包含TcpConnection类的定义，该类封装了TCP连接的基本操作，
+ * 提供了发送和接收消息的功能，并包含了一些调试信息。
+ */ 
 
 #ifndef HEADER_FILENAME_H
 #define HEADER_FILENAME_H
@@ -10,6 +17,12 @@
 
 using std::string;
 
+/**
+ * @class TcpConnection
+ * @brief 封装了TCP连接操作的类。
+ * 
+ * TcpConnection类提供了发送和接收消息的功能，并包含了一些调试信息。
+ */ 
 class TcpConnection
 {
 public:
